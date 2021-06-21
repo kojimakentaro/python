@@ -1,3 +1,4 @@
-# Visual Studio Codeの練習
+# Visual Studio Code上でのgithub　操作
 
-練習です
+github上でファイルを変更済み
+
