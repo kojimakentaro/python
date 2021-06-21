@@ -9,7 +9,7 @@
 
 hello("kojima")
 
-"""
+
 
 def check_name(name):
     if len(name) >=3:
@@ -25,4 +25,5 @@ if result:
 else:
     print("名前が短いです")
 
-    
+"""
+
