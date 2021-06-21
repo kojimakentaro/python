@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+/*
 void func(void){
     int a = 10;
 
@@ -13,3 +13,17 @@ int main(void){
     return  0;
 
 }
+
+
+
+int main(void){
+    int i = 0,v = 0, array[] = {1,8,2,7,3,6,4,5};
+    int *p = array + 3;
+    p += 3;
+    printf("%d\n",*p);
+    return 0;
+
+}
+
+*/
+
