@@ -25,5 +25,33 @@ if result:
 else:
     print("名前が短いです")
 
-"""
 
+
+def hello(*args):
+    print(args)
+
+def hello(text , * , name = "kojima"):
+    print(text,name)
+
+hello("こんにちは")
+hello("こんにちは",name = "kentaro")
+
+
+def create_int_list(numbers = None):
+    if numbers is None:
+        numbers = []
+
+    for i in range(10):
+        numbers.append(i)
+    return numbers
+
+numbers = create_int_list()
+print(numbers)
+
+numbers1 = create_int_list()
+print(numbers1)
+
+numbers2 = create_int_list()
+print(numbers2)
+
+"""
