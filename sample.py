@@ -54,4 +54,24 @@ print(numbers1)
 numbers2 = create_int_list()
 print(numbers2)
 
+
+class Student:
+    def __init__(self,name):
+        self.name = name
+        self.score = {}
+
+    def add_score(self,subject_name,point):
+        self.score[subject_name] = point
+    
+    def get_score(self,subject_name):
+        return self.score.get(subject_name,"その科目はまだ")
+
+kojima = Student("kojima")
+kojima.add_score("math",100)
+
+sato = Student("sato")
+sato.add_score("math",70)
+
+print(kojima.score)
 """
+
