@@ -25,7 +25,7 @@ int main(void){
 
 }
 
-*/
+
 
 
 void func(int *a, int *b){
@@ -47,4 +47,59 @@ int main(void){
 
     printf("\n");
 
+}
+
+
+
+#include<stdio.h>
+
+void func(void){
+    int a = 10 ;
+    static int b = 20;
+    printf("%d %d\n",a++,++b);
+
+}
+
+int main(void){
+    int i;
+    for(i = 1;i <= 3; i++)func();
+    return 0;
+
+}
+
+
+
+#include<string.h>
+
+void main(){
+    int i;
+    char c[256];
+
+    printf("Input words:");
+    scanf("%s",&c);
+
+    for(i = 0;i <strlen(c);i++){
+        c[i] = c[i] |0xDF;
+
+    }
+    printf("%s\n",c);
+
+}
+*/
+
+void main(){
+    int n,result,i;
+    printf("input number(0~255):");
+    scanf("%d",&n);
+    for(i = 0;i < 8; i++){
+        result = n & 0x80;
+        if(result ==0){
+            printf("0");
+
+        }
+        else{
+            printf("1");
+
+        }
+    }
 }
