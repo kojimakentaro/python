@@ -85,7 +85,7 @@ void main(){
     printf("%s\n",c);
 
 }
-*/
+
 
 void main(){
     int n,result,i;
@@ -103,3 +103,70 @@ void main(){
         }
     }
 }
+
+
+
+int main(void){
+    int i;
+    for(i = 10;i>0;i--)
+    printf("%d\n",i);
+    return 0;
+}
+
+
+
+int main(void){
+    int i;
+    i = 10;
+    while(i>0){
+        printf("%d\n",i);
+        i = i-1;
+
+    }
+}
+
+
+
+
+int main(void){
+    int i;
+    typedef struct stu{
+        char name[10];
+        int id;
+    }
+    student;
+    student data[] = {{"kitagawa",1001},{"minamide",1002},{"higashino",1003}};
+    student *p;
+    p = data;
+    for(i = 0;i < 3;i++){
+        printf("%4d: %6s\n",p->id,p ->name);
+        p++;
+    }
+    return 0;
+}
+
+
+
+//ちょっと考えなちゃいけない問題//
+int y = 1;
+
+void func(int* y){ *y = 3;
+}
+int main(){
+    int x = 5;
+    func(&x);
+    printf("%d %d\n",x,y);
+    return 0;
+
+}
+
+*/
+
+ #include <stdio.h>
+int main(void)
+{
+void *vp;
+int i = 10;
+vp = &i;
+  printf("%d\n",*(int*)vp);
+return 0; }
