@@ -160,7 +160,7 @@ int main(){
 
 }
 
-*/
+
 
  #include <stdio.h>
 int main(void)
@@ -170,3 +170,37 @@ int i = 10;
 vp = &i;
   printf("%d\n",*(int*)vp);
 return 0; }
+
+
+
+int y = 1;
+void func(int * y){
+    *y = 3;
+}
+
+int main(){
+    int x = 5;
+    func(&x);
+    printf("%d %d\n",x,y);
+    return 0;
+
+}
+
+
+
+//*は維持される//
+int y = 1;
+void func(int * x){*x = 3;}
+int main(){
+    int x = 5;
+    func(&x);
+    printf("%d %d\n", x,y);
+    return 0;
+
+}
+*/
+
+
+
+
+
