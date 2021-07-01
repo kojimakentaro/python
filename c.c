@@ -198,9 +198,34 @@ int main(){
     return 0;
 
 }
+
+int x = 5;
+
+void func(int x){
+    x = 3;
+
+}
+
+int main(void){
+    func(7);
+    printf("%d\n",x);
+    return 0;
+
+}
+
+
+void f(void *p){
+    printf("%d",*((int*)p + 3));
+
+}
+
+int main(void){
+    int a[] = {1,2,3,4,5};
+    f(a);
+    return 0;
+
+}
 */
-
-
 
 
 
