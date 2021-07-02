@@ -188,7 +188,7 @@ int main(){
 
 
 
-//*は維持される//
+// ※は維持される//
 int y = 1;
 void func(int * x){*x = 3;}
 int main(){
@@ -225,7 +225,29 @@ int main(void){
     return 0;
 
 }
+
+
+int main(){
+    int i,j,a = 0,n = 100;
+
+    for(i = 1,j = n; i <= n; i++,j--){
+        a += i;
+        a -= j;
+    }
+    printf("%d\n",a);
+
+    return 0;
+}
+
 */
+
+int main(){
+    int ary[] = {1,2,3,4,5};
+    printf("%d\n",*(ary+2));
+
+    return 0;
+
+}
 
 
 
