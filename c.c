@@ -239,7 +239,7 @@ int main(){
     return 0;
 }
 
-*/
+
 
 int main(){
     int ary[] = {1,2,3,4,5};
@@ -248,6 +248,20 @@ int main(){
     return 0;
 
 }
+*/
 
+void bubbleSort(int number[],int array_size){
+    int i,j,t;
+
+    for(i = 0;i < (array_size -1);i++){
+        for(j = (array_size -1);j > i;j--){
+            if(number[j - 1] > number[j]){
+            t = number[j -1];
+            number[j -1] = number[j];
+            number[j] = t;
+            }
+        }
+    }
+}
 
 
